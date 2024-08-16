@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Encriptador</title>
+</head>
+<body>
+
+    <div class="cajas__encriptador">
+        <div class="caja__input">
+            <textarea id="texto" oninput="actualizarResultado()" placeholder="Ingresa el texto aquí"></textarea>
+
+            <div class="caja__mensaje__advertencia">
+                <img id= "informacion__icono" class="mensaje__advertencia" src="Imagenes/circle-info-solid.svg" > 
+    
+                <p class="mensaje__advertencia">Solo letras minúsculas y sin acentos</p>
+            </div>
+            
+            <div class="botones__encrip__y__descrip">
+                <button onclick= "encriptarTexto();" class="boton__encriptar">Encriptar</button>
+                <button onclick=" desencriptarTexto();" class="boton__desencriptar">Desencriptar</button>
+                <button class="boton__copiar" onclick="copiarTexto()">Copiar resultado</button>
+            </div>
+        </div>
+
+        <div class="caja__resultado">
+            <img src="Imagenes/Muñeco.png" alt="Persona buscando">
+            <p><strong>Ningún mensaje fue encontrado</strong><br>Ingresa el texto que deseas encriptar o desencriptar</p>
+       </div>
+    </div>
+
+   
+    <footer class="footer">Elaborado por Silvia Candia</footer>
+
+
+    <script src="funciones.js" defer></script>
+</body>
+</html>
