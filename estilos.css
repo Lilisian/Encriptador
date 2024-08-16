@@ -51,6 +51,7 @@ body{
 .caja__mensaje__advertencia{
     display: flex;
     gap: 8px;
+    font-size: 1rem;
     padding: 5px 0 16px 24px;
 }
 
@@ -105,7 +106,7 @@ body{
     text-align: center;
     width: 30%;
     height: 80vh;
-    margin: 40px 40px 40px 100px;
+    margin: 40px 40px 40px 0px;
     background-color: var(--color-sexagenario);
     border-radius: 25px;
     box-shadow: 4px 10px 20px var(--color-cuaternario);
@@ -128,6 +129,7 @@ body{
 @media (max-width: 1100px){
     .cajas__encriptador{
         flex-direction: column;
+        align-items: center;
     }
 
     .caja__resultado img{
@@ -137,44 +139,44 @@ body{
     .caja__input{
         width: auto;
         height: 70vh;
-        padding: 8% 0% 0% 4%;
+        padding: 8% 0% 0% 0%;
+        width: 90%;
     }
 
     .caja__resultado{
-        width: auto;
-        height: 30vh;
+        height: 50vh;
+        width: 90%;
+        margin: 50px 0px 20px;
     }
 
     .cajas__encriptador textarea{
-        padding: 50px;
+        padding: 20px;
     }
 }
 
 @media (max-width: 933px){
+
     .cajas__encriptador textarea{
-        padding: 20px 5px;
+        padding: 10px;
     }
     
     .caja__input{
-        height: 40vh;
-    }
-
-    .caja__mensaje__advertencia{
-        padding: 5px 0px;
+        height: 35vh;
     }
 
     .botones__encrip__y__descrip{
         flex-direction: column;
         align-items: center;
+
     }
 
     .boton__encriptar, .boton__desencriptar, .boton__copiar{
-        width: 90%;
+        width: 80%;
+        padding: 10px;
     }
 
     .caja__resultado{
-        height: 20vh;
-        width: 75%;
+        height: 25vh;   
     }
 
 }
